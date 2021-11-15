@@ -3,7 +3,7 @@ Scripts and models for an Italian ASR system based on NVIDIA NeMo
 
 ## Citation
 
-If you use `pyfn` please cite:
+If you use my work, please cite:
 ```tex
 @InProceedings{Tamburini2021,
   author = {Tamburini, Fabio},
