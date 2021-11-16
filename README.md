@@ -33,6 +33,9 @@ python3 train_QuartzNet.py
 ```
 In case of problems contact me at <fabio.tamburini@unibo.it>.
 
+### Potential problems
+Italian texts contains some accented letters that are stored as Unicode characters in dataset JSON files; this could cause some problems when reading these files and could require slight modifications of official NeMo codes adding explicitly the "encoding" attribute in python when opening the files.
+
 ### Acknowledgements
 All the scripts are based on those released by NVIDIA or on some tutorial from NVIDIA scholars.
 
