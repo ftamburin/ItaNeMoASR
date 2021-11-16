@@ -1,5 +1,5 @@
-# ItaNeMoASR
-Scripts and models for an Italian ASR system based on NVIDIA NeMo
+# ItaNeMoASR Datasets
+In this folder you can find the JSON main files for the various datasets used in my paper for training, validating and testing the ASR Italian version of NVIDIA NeMo. Please, check the paths in these JSON files and download and process all datasets according to the paths indicated into the files.
 
 ## Citation
 
