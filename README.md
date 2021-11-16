@@ -12,12 +12,15 @@ For reproducing our results:
 - Download our models from http://corpora.ficlit.unibo.it/UploadDIR/ItaNeMoASR_models.tar.gz
 - Extract model files.
 - Download the dataset listed in the paper from their websites.
-- Test our models or transcribe new speech:
-  - With *Greedy Decoding*
-```
-    python3 
-```
-
+- Test our models or transcribe new speech...
+  - ...by using *Greedy Decoding*
+  ```
+    python3 transcribe_speech.py model_path=models/stt_itUniBO_quartznet15x5.nemo dataset_manifest=TCorpora/cv-corpus-7.0-2021-07-21_test.json 
+  ```
+  - ...by applying *Beam-Search Decoding & N-gram Rescoring*
+  ```
+    python3 eval_beamsearch_ngram.py --nemo_model_file models/stt_itUniBO_quartznet15x5.nemo --input_manifest TCorpora/cv-corpus-7.0-2021-07-21_test.json --kenlm_model_file models/6gramLM_CORIS165C.kenlm --decoding_mode beamsearch_ngram --beam_width 1024 --beam_alpha 1.0 --beam_beta 0.5 
+  ```
 
 In case of problems contact me at <fabio.tamburini@unibo.it>.
 
