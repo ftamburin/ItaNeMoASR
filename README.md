@@ -27,13 +27,16 @@ For reproducing our results:
   ```
 
 ### Re-Training the entire model
-To re-train the Italian ASR model from scratch, you have to download the standard **stt_en_quartznet15x5.nemo v1.0.0rc1 published the 30th June 2021***, adjust the parameters into the train_QuartzNet.py script and then execute
+To re-train the Italian ASR model from scratch, you have to download the standard **stt_en_quartznet15x5.nemo v1.0.0rc1 published the 30th June 2021**, adjust the parameters into the train_QuartzNet.py script and then execute
 ```
 python3 train_QuartzNet.py
 ```
 In case of problems contact me at <fabio.tamburini@unibo.it>.
 
-## Citation
+### Acknowledgements
+All the scripts are based on those released by NVIDIA or on some tutorial from NVIDIA scholars.
+
+### Citation
 
 If you use my work, please cite:
 ```tex
