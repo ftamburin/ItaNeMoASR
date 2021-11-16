@@ -1,5 +1,5 @@
-# ItaNeMoASR
-Scripts and models for an Italian ASR system based on NVIDIA NeMo
+# ItaNeMoASR Models
+Here you should put the models for an Italian ASR system based on NVIDIA NeMo
 
 ## Citation
 
