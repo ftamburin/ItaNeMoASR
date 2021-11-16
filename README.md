@@ -26,7 +26,7 @@ For reproducing our results:
     python3 eval_neural_rescorer.py --lm_model=models/TransformerLM_CORIS165C_e36.nemo --beams_file=BEAM_1024_1_0.5/preds_out_width512_alpha1.0_beta0.5.tsv --beam_size=1024 --eval_manifest=TCorpora/cv-corpus-7.0-2021-07-21_test.json 
   ```
 
-###Re-Training the entire model
+### Re-Training the entire model
 
 In case of problems contact me at <fabio.tamburini@unibo.it>.
 
