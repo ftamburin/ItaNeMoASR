@@ -2,6 +2,24 @@
 Scripts and models for setting up an Italian ASR system based on NVIDIA NeMo.
 
 This scripts have been tested on:
+- Python 3.6.8
+- NumPy 1.19.5
+- PyTorch 1.9.0
+- NVIDIA NeMo 1.1.0
+
+For reproducing our results:
+- Clone the repository.
+- Download our models from http://corpora.ficlit.unibo.it/UploadDIR/ItaNeMoASR_models.tar.gz
+- Extract model files.
+- Download the dataset listed in the paper from their websites.
+- Test our models or transcribe new speech:
+  - With *Greedy Decoding*
+```
+    python3 
+```
+
+
+In case of problems contact me at <fabio.tamburini@unibo.it>.
 
 ## Citation
 
