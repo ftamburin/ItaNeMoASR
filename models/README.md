@@ -1,5 +1,5 @@
 # ItaNeMoASR Models
-Here you should put the models for an Italian ASR system based on NVIDIA NeMo
+In this folder you should put the models for my Italian ASR system based on NVIDIA NeMo.
 
 ## Citation
 
