@@ -11,7 +11,7 @@ For reproducing our results:
 - Clone the repository.
 - Download our models from http://corpora.ficlit.unibo.it/UploadDIR/ItaNeMoASR_models.tar.gz
 - Extract model files.
-- Download the dataset listed in the paper from their respective websites, process all the .wav file formatting and putting them following the path indicated in the corresponding JSON file (or completely modifi the JSON accordingly).
+- Download the datasets listed in the reference paper from their respective websites, process all the .wav file formatting and putting them following the paths indicated in the corresponding JSON file (or completely modify the JSON accordingly).
 - Test our models or transcribe new speech...
   - ...by using **Greedy Decoding**
   ```
