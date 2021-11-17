@@ -1,7 +1,7 @@
 # ItaNeMoASR
 Scripts and models for setting up an Italian ASR system based on NVIDIA NeMo.
 
-This scripts have been tested on:
+These scripts have been tested on:
 - Python 3.6.8
 - NumPy 1.19.5
 - PyTorch 1.9.0
@@ -9,7 +9,7 @@ This scripts have been tested on:
 
 For reproducing our results:
 - Clone the repository.
-- Download our models (~5GB!) from http://corpora.ficlit.unibo.it/UploadDIR/ItaNeMoASR_models.tar.gz
+- Download our models (~5GB!) from [our server](http://corpora.ficlit.unibo.it/UploadDIR/ItaNeMoASR_models.tar.gz)
 - Extract model files into the main repository folder.
 - Download the datasets listed in the reference paper from their respective websites, process all the .wav file formatting and putting them following the paths indicated in the corresponding JSON file in the TCorpora folder (or completely modify the JSONs accordingly).
 - Test our models or transcribe new speech...
