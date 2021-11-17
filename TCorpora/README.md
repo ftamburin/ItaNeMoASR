@@ -1,5 +1,5 @@
 # ItaNeMoASR Datasets
-In this folder you can find the JSON main files for the various datasets used in my paper for training, validating and testing the Italian ASR version of NVIDIA NeMo I produced. Please, check the paths in these JSON files and download and process all datasets according to the paths indicated into the files.
+In this folder you can find the JSON main files for the various datasets used in my paper for training, validating and testing the Italian ASR version of NVIDIA NeMo I produced. Please, check the paths in these JSON files and download and process all datasets according to the paths indicated in the files.
 
 ## Citation
 
