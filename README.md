@@ -23,7 +23,7 @@ For reproducing our results:
   ```
   - ...by applying **Beam-Search Decoding & Neural Rescoring**
   ```
-    python3 eval_beamsearch_ngram.py --nemo_model_file ../models/stt_itUniBO_quartznet15x5.nemo --input_manifest TCorpora/cv-corpus-7.0-2021-07-21_test.json --decoding_mode beamsearch --beam_width 1024 --beam_alpha 1.0 --beam_beta 0.5 --preds_output_folder BEAM_1024_1_0.5 
+    python3 eval_beamsearch_ngram.py --nemo_model_file models/stt_itUniBO_quartznet15x5.nemo --input_manifest TCorpora/cv-corpus-7.0-2021-07-21_test.json --decoding_mode beamsearch --beam_width 1024 --beam_alpha 1.0 --beam_beta 0.5 --preds_output_folder BEAM_1024_1_0.5 
     python3 eval_neural_rescorer.py --lm_model=models/TransformerLM_CORIS165C_e36.nemo --beams_file=BEAM_1024_1_0.5/preds_out_width512_alpha1.0_beta0.5.tsv --beam_size=1024 --eval_manifest=TCorpora/cv-corpus-7.0-2021-07-21_test.json 
   ```
 
