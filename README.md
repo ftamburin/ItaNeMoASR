@@ -11,7 +11,7 @@ For reproducing our results:
 - Clone the repository.
 - Download our models (~5GB!) from http://corpora.ficlit.unibo.it/UploadDIR/ItaNeMoASR_models.tar.gz
 - Extract model files.
-- Download the datasets listed in the reference paper from their respective websites, process all the .wav file formatting and putting them following the paths indicated in the corresponding JSON file (or completely modify the JSON accordingly).
+- Download the datasets listed in the reference paper from their respective websites, process all the .wav file formatting and putting them following the paths indicated in the corresponding JSON file in the TCorpora folder (or completely modify the JSONs accordingly).
 - Test our models or transcribe new speech...
   - ...by using **Greedy Decoding**
   ```
@@ -27,14 +27,14 @@ For reproducing our results:
   ```
 
 ### Re-Training the entire model
-To re-train the Italian ASR model from scratch, you have to download the standard **stt_en_quartznet15x5.nemo v1.0.0rc1 published the 30th June 2021** from the [NVIDIA repository](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_en_quartznet15x5), adjust the parameters into the train_QuartzNet.py script and then execute
+To re-train the Italian ASR model from scratch, you have to download the standard **stt_en_quartznet15x5.nemo v1.0.0rc1 published the 30th June 2021** from the [NVIDIA repository](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_en_quartznet15x5), adjust the parameters into the train_QuartzNet.py script (if you would like to test different parameters from those in the paper) and then execute
 ```
 python3 train_QuartzNet.py
 ```
 In case of problems contact me at <fabio.tamburini@unibo.it>.
 
 ### Potential problems
-Italian texts contains some accented letters that are stored as Unicode characters in dataset JSON files; this could cause some problems when reading these files and could require slight modifications of official NeMo codes adding explicitly the "encoding" attribute in python when opening the files.
+Italian texts contain some accented letters that are stored as Unicode characters in dataset JSON files; this could cause some problems when reading these files and could require slight modifications of official NeMo codes adding explicitly the "encoding" attribute in python when opening the files.
 
 ### Acknowledgements
 All the scripts are based on those released by NVIDIA or on some tutorial from NVIDIA scholars.
