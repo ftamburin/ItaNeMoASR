@@ -9,7 +9,7 @@ These scripts have been tested on:
 
 For reproducing our results:
 - Clone the repository.
-- Download our models (~5GB!) from [our server](http://corpora.ficlit.unibo.it/UploadDIR/ItaNeMoASR_models.tar.gz).
+- Download our models (~5GB!) from [our server](http://corpora.ficlit.unibo.it/UploadDIR/GitHub/ItaNeMoASR_models.tar.gz).
 - Extract model files into the main repository folder.
 - Download the datasets listed in the reference paper from their respective websites, process all the .wav file formatting and putting them following the paths indicated in the corresponding JSON file in the TCorpora folder (or completely modify the JSONs accordingly).
 - Test our models or transcribe new speech...
@@ -35,7 +35,7 @@ python3 train_QuartzNet.py
 In case of problems contact me at <fabio.tamburini@unibo.it>.
 
 ### Potential problems
-Italian texts contain some accented letters that are stored as Unicode characters in dataset JSON files; this could cause some problems when reading these files and could require slight modifications of official NeMo codes adding explicitly the "encoding" attribute in python when opening the files.
+Italian texts contain some accented letters that are stored as Unicode characters in dataset JSON files; this could cause some problems when reading these files and could require slight modifications of official NeMo codes adding explicitly the "encoding" attribute in python when opening files.
 
 ### Acknowledgements
 All the scripts are based on those released by NVIDIA or on some tutorial from NVIDIA scholars.
@@ -49,8 +49,8 @@ If you use my work, please cite:
   title = {{Playing with NeMo for building an Automatic Speech Recogniser for Italian}},
   booktitle = {{Proceedings of the 7th Italian Conference on Computational Linguistics - CLIC-it 2021}},
   year = {2021},
-  publisher = {CEUR-WS XXXX},
+  publisher = {CEUR-WS 3033},
   location = {Milan, Italy},
-  url = {http://}
+  url = {[http://](http://ceur-ws.org/Vol-3033/paper19.pdf)}
 }
 ```
